@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CSS Dasar</title>
+  <style>
+    /* Internal CSS */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f9fc;
+    }
+    header {
+      min-height: 80px;
+      border-bottom: 1px solid #77CCEF;
+    }
+    h1 {
+      font-size: 24px;
+      color: #0F189F;
+      text-align: center;
+      padding: 20px 10px;
+      margin: 0;
+    }
+    h1 i { color: #6d6a6b; }
+
+    nav {
+      background: #20A759;
+      color: #fff;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+    }
+    nav a.active, nav a:hover {
+      background: #0B6B3A;
+    }
+
+    /* ID & class selectors - contoh di internal CSS juga */
+    #intro {
+      background: #418fb1;
+      border: 1px solid #099249;
+      min-height: 100px;
+      padding: 10px;
+      margin: 10px;
+      color: #fff;
+    }
+    #intro h1 { text-align: left; margin: 0 0 8px 0; }
+
+    .button {
+      padding: 12px 18px;
+      background: #bebcbd;
+      color: #fff;
+      display:inline-block;
+      margin: 10px 0;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .btn-primary { background: #E42A42; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Internal dan <i>Inline CSS</i></h1>
+  </header>
+
+  <nav>
+    <a href="lab2_css_dasar.html" class="active">CSS Dasar</a>
+    <a href="lab2_css_eksternal.html">CSS Eksternal</a>
+    <a href="lab1_tag_dasar.html">HTML Dasar</a>
+  </nav>
+
+  <!-- CSS ID Selector -->
+  <div id="intro">
+    <h1>Hello World</h1>
+    <!-- Contoh Inline CSS di bawah -->
+    <p style="text-align:center; color:#ccd8e4;">
+      Kami sedang belajar HTML dan CSS dasar, pada mata kuliah <b>Pemrograman Web</b> di <i>Universitas Pelita Bangsa</i>.
+    </p>
+
+    <!-- Contoh penggunaan class -->
+    <a class="button btn-primary" href="#intro">Informasi selengkapnya</a>
+  </div>
+</body>
+</html>
