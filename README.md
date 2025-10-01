@@ -46,6 +46,7 @@ h1 {
   border-radius: 5px;
 }
 
+---
 
 **2. Apa perbedaan h1 {...} dengan #intro h1 {...}?**
 Jawaban:
@@ -55,6 +56,7 @@ h1 {...} → berlaku untuk semua elemen <h1> di halaman.
 #intro h1 {...} → hanya berlaku untuk <h1> di dalam elemen dengan id="intro".
 Perbedaannya ada pada cakupan dan spesifisitas selector.
 
+---
 
 **3. Jika ada internal, eksternal, dan inline CSS pada elemen yang sama, mana yang ditampilkan?**
 
@@ -62,14 +64,13 @@ Jawaban:
 Urutan prioritas CSS:
 
 Inline CSS → paling tinggi
-
 Internal CSS
-
 External CSS → paling rendah
 
 Contoh:
 <p style="color:red;">Teks ini merah (inline menang)</p>
 
+---
 
 **4. Pada elemen terdapat ID dan Class, jika keduanya ada CSS, mana yang dipakai?
 
@@ -84,6 +85,7 @@ CSS
 HTML
 <p id="paragraf-1" class="text-paragraf">Teks ini tampil oranye</p>
 
+---
 
 5. Apa fungsi validasi CSS dengan W3C Validator?
 
@@ -91,13 +93,10 @@ Jawaban:
 Validasi CSS digunakan untuk memastikan kode CSS sesuai standar internasional (W3C).
 Manfaatnya:
 
-Menghindari error sintaks.
-
-Membuat tampilan konsisten di berbagai browser.
-
-Membuktikan kode sudah sesuai best practice.
-
-Hasil validasi pada file style_eksternal.css adalah No Error Found ✅.
+- Menghindari error sintaks.
+- Membuat tampilan konsisten di berbagai browser.
+- Membuktikan kode sudah sesuai best practice.
+- Hasil validasi pada file style_eksternal.css adalah No Error Found ✅.
 
 
 ---
